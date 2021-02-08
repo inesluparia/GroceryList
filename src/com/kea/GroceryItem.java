@@ -9,8 +9,8 @@ public class GroceryItem {
         this.quantity = quantity;
     }
 
-    public double getCost(){
-        return product.getCost()*quantity;
+    public double getItemCost(){
+        return product.getCost() * quantity;
     }
 
     public String toString(){

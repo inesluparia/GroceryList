@@ -11,9 +11,12 @@ public class Main {
         catalogue.print();
 
         var item1 = new GroceryItem(soup,2);
+        System.out.println(item1.getItemCost());
         var item2 = new GroceryItem(catalogue.products.get(0),2);
+        System.out.println(item2.getItemCost());
 
-    var groceryList = new GroceryList();
+
+        var groceryList = new GroceryList();
     groceryList.add(item1);
     groceryList.add(item2);
 

@@ -12,6 +12,10 @@ public class GroceryList {
 
     public double getTotalCost(){
         double total = 0;
+
+        for (GroceryItem gi : list){
+            total += gi.getItemCost();
+        }
         return total;
     }
 
@@ -20,6 +24,7 @@ public class GroceryList {
         for(GroceryItem item: list){
             System.out.println(item);
         }
+        System.out.println("Total cost: "+getTotalCost()+" kr.");
         System.out.println();
     }
 }
