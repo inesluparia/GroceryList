@@ -14,6 +14,6 @@ public class GroceryItem {
     }
 
     public String toString(){
-        return quantity + " x " + product;
+        return product + " x " + quantity;
     }
 }

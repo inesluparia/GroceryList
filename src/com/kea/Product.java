@@ -18,6 +18,6 @@ public class Product {
     }
 
     public String toString(){
-        return name + " " + costInDkk + " kr.";
+        return name + " " + String.format("%.2f", costInDkk) + " kr";
     }
 }

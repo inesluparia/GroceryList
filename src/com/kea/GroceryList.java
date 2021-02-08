@@ -24,7 +24,7 @@ public class GroceryList {
         for(GroceryItem item: list){
             System.out.println(item);
         }
-        System.out.println("Total cost: "+getTotalCost()+" kr.");
+        System.out.println("Total cost: "+String.format("%.2f", getTotalCost())+" kr.");
         System.out.println();
     }
 }
